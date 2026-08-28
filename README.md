@@ -1,44 +1,75 @@
 # SHOP.AI — Agentic Commerce Platform
 
-> A modern, autonomous AI-powered e-commerce platform blending **Pinterest x Apple minimalism** with an interactive AI shopping concierge, live product negotiation, and instant 1-click Razorpay payment link generation.
+> Autonomous e-commerce platform blending **Pinterest x Apple minimalism** with an AI shopping agent, live price negotiations, and 1-click Razorpay payment link generation.
 
 ---
 
-## 💡 About the Project
+## 🤖 AI Agent Workflow Architecture
 
-**SHOP.AI** is a next-generation autonomous e-commerce experience designed to bridge traditional browsing with AI-driven shopping assistance. 
-
-Instead of searching manually through endless product pages, shoppers can interact directly with an intelligent AI Commerce Assistant to discover items, negotiate special prices, and complete transactions instantly using Razorpay Payment Links.
+```text
+ ┌────────────────┐       ┌────────────────────────┐       ┌──────────────────────┐
+ │  User Request  │ ───►  │   AI Commerce Agent    │ ───►  │ Live Product Search  │
+ └────────────────┘       └────────────────────────┘       └──────────────────────┘
+                                      │                               │
+                                      ▼                               ▼
+                          ┌──────────────────────┐       ┌──────────────────────┐
+                          │  Dynamic Negotiation │ ───►  │ Razorpay Payment Link│
+                          │  (Up to 15% Off)     │       │ (https://rzp.io/...) │
+                          └──────────────────────┘       └──────────────────────┘
+                                                                  │
+                                                                  ▼
+                                                       ┌──────────────────────┐
+                                                       │   1-Click Purchase   │
+                                                       └──────────────────────┘
+```
 
 ---
 
-## 🤖 What the AI Agent Does
+## ⚡ Practical Agent Workflows & Examples
 
-The **AI Growth Commerce Assistant** acts as your personal autonomous shopper and sales concierge:
+### 1. Product Search & Discount Negotiation
+**User Prompt:**
+> *"Find Awesome Bell Lamp — Sand White and negotiate the best price."*
 
-- **🔍 Smart Catalog Discovery**: Understands natural language requests (e.g. *"Find a terracotta ceramic vase under ₹7,000"*) and retrieves matching catalog items instantly.
-- **🏷️ Autonomous Price Negotiation**: Dynamically evaluates product pricing and authorizes special agent discounts (up to 15% off) for shoppers.
-- **💳 Instant Payment Generation**: Generates direct, secure Razorpay payment links (`https://rzp.io/...`) embedded right inside the chat bubble for effortless 1-click checkout.
-- **⚡ Direct Order Execution**: Communicates seamlessly with the merchant fulfillment service to process completed orders in real time.
+**AI Agent Response:**
+```text
+**Awesome Bell Lamp — Sand White**
+
+• Original Price: ₹18,999
+• Negotiated Price: ₹14,999 (15% discount applied)
+• Features: Minimalist bell-shaped pendant lamp with matte sand ceramic finish.
+
+👉 Proceed to Checkout: https://rzp.io/rzp/VwoIDsD6
+```
+
+### 2. Standalone Agent CLI Execution
+```bash
+python agent.py
+```
+**Terminal Output:**
+```text
+AI Growth Agent - Razorpay Active
+==================================================
+Task: Create payment link for Premium Widget (₹2,499)
+
+Live Payment Link Created!
+Link ID: plink_TV8y6pRbAIAoZy
+URL: https://rzp.io/rzp/VwoIDsD6
+Amount: ₹2499.0
+Status: created
+```
 
 ---
 
-## 🌟 Platform Highlights
+## 🌟 Key Platform Features
 
-- **🛍️ Curated Section-Wise Storefront**:
-  Organized category carousels (*Interior & Home*, *Dairy & Fresh Groceries*, *Electronics*, *Fashion*) featuring 8–10 scrollable items per track, marketing banners, and sponsored deal spotlights.
-
-- **🎨 Pinterest x Apple Minimalist Aesthetics**:
-  Light canvas background (`#f2f4f5`), 28px rounded white cards, violet (`#5433eb`) accents, 9999px pill elements, and spring bounce physics animations.
-
-- **📦 100+ Product Live Catalog**:
-  Real-time synchronized product catalog spanning home decor, organic groceries, smart electronics, fashion apparel, and luxury accessories with INR (₹) pricing.
-
-- **💳 Encrypted 1-Click Checkout**:
-  Sleek two-column checkout modal featuring pill inputs (`9999px` radius), multi-tier shipping options, and instant payment verification with Razorpay Gateway.
-
-- **📊 Merchant Analytics Hub**:
-  Real-time merchant dashboard tracking sales metrics, total revenue, completed orders, and gateway connectivity.
+| Feature | Description |
+| :--- | :--- |
+| **🛋️ Curated Storefront** | 4 category sections (*Interior & Home*, *Dairy & Groceries*, *Electronics*, *Fashion*) with 8–10 scrollable items per track. |
+| **🤖 AI Shopping Agent** | Autonomous search, automated price negotiation, and direct payment link creation. |
+| **💳 Razorpay Payment Links** | 1-click checkout execution embedded directly in chat bubbles. |
+| **📦 100+ Live Products** | Asynchronous catalog synchronization with real-time INR (₹) prices. |
+| **📊 Merchant Analytics** | Real-time transaction monitoring, order history, and revenue metrics. |
 
 ---
 
@@ -52,7 +83,7 @@ The **AI Growth Commerce Assistant** acts as your personal autonomous shopper an
 
 ---
 
-## 🚀 Quick Start Guide
+## 🚀 Quick Start
 
 ### 1. Backend Setup
 ```bash
@@ -60,8 +91,6 @@ cd backend
 python -m venv venv
 venv\Scripts\activate  # On Windows
 pip install -r requirements.txt
-
-# Start backend server on port 8000
 python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
 
@@ -72,4 +101,4 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:5173` in your browser to launch the platform.
+Open `http://localhost:5173` to launch the web dashboard.
