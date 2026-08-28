@@ -1,6 +1,6 @@
 # SHOP.AI — Agentic Commerce Platform
 
-> A modern, autonomous AI-powered e-commerce platform blending **Pinterest x Apple minimalism** with an interactive AI shopping concierge, live product negotiation, and instant 1-click payment link generation.
+> A modern, autonomous AI-powered e-commerce platform blending **Pinterest x Apple minimalism** with an interactive AI shopping concierge, live product negotiation, and instant 1-click Razorpay payment link generation.
 
 ---
 
@@ -8,7 +8,7 @@
 
 **SHOP.AI** is a next-generation autonomous e-commerce experience designed to bridge traditional browsing with AI-driven shopping assistance. 
 
-Instead of searching manually through endless product pages, shoppers can interact directly with an intelligent AI Commerce Assistant to discover items, negotiate special prices, and complete transactions instantly.
+Instead of searching manually through endless product pages, shoppers can interact directly with an intelligent AI Commerce Assistant to discover items, negotiate special prices, and complete transactions instantly using Razorpay Payment Links.
 
 ---
 
@@ -18,7 +18,7 @@ The **AI Growth Commerce Assistant** acts as your personal autonomous shopper an
 
 - **🔍 Smart Catalog Discovery**: Understands natural language requests (e.g. *"Find a terracotta ceramic vase under ₹7,000"*) and retrieves matching catalog items instantly.
 - **🏷️ Autonomous Price Negotiation**: Dynamically evaluates product pricing and authorizes special agent discounts (up to 15% off) for shoppers.
-- **💳 Instant Payment Generation**: Generates direct, secure payment links (`https://rzp.io/...`) embedded right inside the chat bubble for effortless 1-click checkout.
+- **💳 Instant Payment Generation**: Generates direct, secure Razorpay payment links (`https://rzp.io/...`) embedded right inside the chat bubble for effortless 1-click checkout.
 - **⚡ Direct Order Execution**: Communicates seamlessly with the merchant fulfillment service to process completed orders in real time.
 
 ---
@@ -35,7 +35,7 @@ The **AI Growth Commerce Assistant** acts as your personal autonomous shopper an
   Real-time synchronized product catalog spanning home decor, organic groceries, smart electronics, fashion apparel, and luxury accessories with INR (₹) pricing.
 
 - **💳 Encrypted 1-Click Checkout**:
-  Sleek two-column checkout modal featuring pill inputs (`9999px` radius), multi-tier shipping options, and instant payment verification.
+  Sleek two-column checkout modal featuring pill inputs (`9999px` radius), multi-tier shipping options, and instant payment verification with Razorpay Gateway.
 
 - **📊 Merchant Analytics Hub**:
   Real-time merchant dashboard tracking sales metrics, total revenue, completed orders, and gateway connectivity.
@@ -44,9 +44,11 @@ The **AI Growth Commerce Assistant** acts as your personal autonomous shopper an
 
 ## 🛠️ Technology Stack
 
-- **Frontend**: React 18, Vite, Vanilla CSS Design System, Lucide Icons
-- **Backend**: Python 3.12, FastAPI, Uvicorn, HTTPX Async Client
-- **Payments**: Razorpay Payment Link Gateway
+| Layer | Technologies Used |
+| :--- | :--- |
+| **Frontend** | React 18, Vite, Vanilla CSS Design System, Lucide Icons |
+| **Backend** | Python 3.12, FastAPI, Uvicorn, HTTPX Async Client |
+| **Payments** | Razorpay Payment Gateway & Payment Links API |
 
 ---
 
