@@ -11,7 +11,7 @@ Modern React + Vite web dashboard for the **Agentic Commerce Platform**, designe
 - **`AgentStudio.jsx`**: Full-width AI command studio for live catalog searches, automated price negotiation, and direct payment link generation.
 - **`SearchResults.jsx`**: Catalog search view with blank initial state, sort dropdowns, and 240px filter sidebar.
 - **`MerchantDashboard.jsx`**: Real-time sales analytics dashboard tracking revenue, order logs, and gateway connection status.
-- **`CheckoutModal.jsx`**: 60/40 two-column checkout modal with pill inputs and 1-click Razorpay payment execution.
+- **`CheckoutModal.jsx`**: Two-column checkout modal with pill inputs and 1-click payment execution.
 
 ---
 
